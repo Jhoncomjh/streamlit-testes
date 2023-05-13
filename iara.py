@@ -10,10 +10,10 @@ st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
 
 st.write(
     "Has environment variables been set:",
-    os.environ["db_username"] == st.secrets["db_username"],
+    os.environ["db_username"] == st.secrets["db_username"],)
     
     
-openai.api_key == "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"
+openai.api_key = "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"
     
 st.title("Olá, sou a I.A.R.A.S, como posso te ajudar hoje?")
 st.subheader("Inteligência Artificial de Respostas Automáticas em Saúde")
