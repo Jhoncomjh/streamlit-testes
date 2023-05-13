@@ -13,7 +13,8 @@ st.write(
     os.environ["db_username"] == st.secrets["db_username"],
     
     
-openai.api_key = os.getenv("senha_openai")
+openai.api_key = "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"
+    
 st.title("Olá, sou a I.A.R.A.S, como posso te ajudar hoje?")
 st.subheader("Inteligência Artificial de Respostas Automáticas em Saúde")
 st.write("Desenvolvido por alunos do 1º ano do Colégio Militar de Belém")
