@@ -2,7 +2,17 @@ import openai
 import streamlit as st
 import os
 from streamlit_chat import message as msg
+import streamlit as st
 
+st.write("DB username:", st.secrets["db_username"])
+st.write("DB password:", st.secrets["db_password"])
+st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
+
+st.write(
+    "Has environment variables been set:",
+    os.environ["db_username"] == st.secrets["db_username"],
+    
+    
 openai.api_key = os.getenv("senha_openai")
 st.title("Olá, sou a I.A.R.A.S, como posso te ajudar hoje?")
 st.subheader("Inteligência Artificial de Respostas Automáticas em Saúde")
